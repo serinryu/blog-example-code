@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.spring.mvc.MVC03.ScoreRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-31T15:07:58" hostname="Serins-MacBook-Pro.local" time="0.006">
+  <properties/>
+  <testcase name="2번 학생을 삭제하면 남은 총 인원은 2명이 된다." classname="com.spring.mvc.MVC03.ScoreRepositoryTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
