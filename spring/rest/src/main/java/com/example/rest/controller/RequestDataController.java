@@ -12,7 +12,7 @@ import java.util.Map;
 public class RequestDataController {
 
     /*
-    1. form 태그로 데이터 전달
+    Example 1. General POST request (form data)
     name : Chris
     age : 25
     */
@@ -31,10 +31,12 @@ public class RequestDataController {
     }
     // 🔥25
 
+    
+    
     /*
-    2. JSON 형식으로 데이터 전달
-    -> js 의 fetch API 를 사용하여 비동기적으로 JSON 데이터를 주고 받는 예시
+    Example 2. Asynchronous POST request (JSON data)
      */
+    
     @PostMapping("/givejsondata1")
     public String givejsondata1(@RequestParam String name) {
         System.out.println("🔥" + name);
