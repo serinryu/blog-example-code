@@ -1,5 +1,14 @@
-# Environment
-To see how to get data from Server using Fetch API, separate back and front on different servers.
+# @RequestParam VS @RequestBody
+
+- Example 1. gerneral POST request (Form data) 
+    - application/x-www-form-urlencoded → @RequestParam
+
+- Example 2. asynchronous POST request (JSON data) 
+    - application/json → @RequestParam
+
+# Test for Example 2
+
+## Environment
 - Server : Spring Boot Embedded Web Server (port : 8080)
 - Client : VSCode Live Server (port : 5050)
 
