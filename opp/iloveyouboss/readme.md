@@ -11,13 +11,13 @@ understand what it’s responsible for—its *policy*.
 > HOW? By extracting detailed bits of logic to separate methods or classes
 
 - Profile 0 : Original
-- Profile 1 : Extract inner methods (answerMatching(), matches())
-- Profile 2 : Extract inner methods (calculateScore())
-- Profile 3 : Extract inner methods (doesNotMeetAnyMustMatchCriterion())
-- Profile 4 : Extract inner methods (anyMatch())
+- Profile 1 : Extract inner methods (`answerMatching()`, `matches()`)
+- Profile 2 : Extract inner methods (`calculateScore()`)
+- Profile 3 : Extract inner methods (`doesNotMeetAnyMustMatchCriterion()`)
+- Profile 4 : Extract inner methods (`anyMatch()`)
   - After refactoring of the matches() method, each of anyMatches(), calculateScore(), and doesNotMeetAnyMustMatchCriterion()iterates through the criterion collection. Three new loops—we have potentially quadrupled the time to execute the matches() method. Yes, performance is important. But is the refactored code now incapable of meeting performance expectations? Invest in keeping the code clean instead of wasting time with premature optimization efforts, If performance isn’t an immediate problem. 
   - Still, The Profile class violates the **Single Responsibility Principle (SRP)** of object- oriented class design, which tells us that classes should have only one reason to change.
-- Profile 5 : Extract matches() responsibility to another class, named `MatchSet` class. (Profile + MatchSet)
+- Profile 5 : Extract `matches()` responsibility to another class, named `MatchSet` class. (Profile + MatchSet)
   - Now, Profile class has only 1 responsibility. Another responsibility will be handled by `MatchSet` class.
 
 ---
