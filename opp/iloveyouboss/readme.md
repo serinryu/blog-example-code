@@ -1,6 +1,8 @@
 
 # Refactoring Profile class 
 
+[📝 Description](https://serinryu.medium.com/tdd-refactoring-pragmatic-unit-testing-in-java-with-junit-3d8cd88db460)
+
 Employers and employees both create profiles by answering a series of multiple choice or yes-no questions. The site scores profiles based on criteria from the other party and shows the best potential matches from the perspective of both employee and employer.
 
 However, Profile class code need Refactoring, because it’s not easy to read. Conditional expressions often read poorly, particularly when they are complex. 
